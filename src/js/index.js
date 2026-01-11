@@ -32,12 +32,12 @@ const userNameIs = prompt("write your name");
 const userEmailIs = prompt("write your E-mail");
 const userPasswordIs = prompt("write your Password");
 
-const isUserNameValid = userNameIs.trim.length >= 3;
+const isUserNameValid = userNameIs.trim().length >= 3;
 const isUserEmailValid =
   userEmailIs.indexOf("@") > userEmailIs.lastIndexOf(".");
-const isUserPasswordValid = userPasswordIs.trim.length >= 6;
-const transition = alert("Перенаправлення на іншу сторінку");
+const isUserPasswordValid = userPasswordIs.trim().length >= 6;
 if (isUserNameValid && isUserEmailValid && isUserPasswordValid) {
+  alert("Перенаправлення на іншу сторінку");
 } else {
   console.log("Помилка: неправильне заповнення");
 }
